@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>touch-nums</title>
+    <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body onload="init()">
+    <div class="game">
+        <img src="background.jpeg" alt="the game">
+
+        <button onclick="init()">Reset</button>
+        <div class="box timer" >
+            <h7>Time-pass:</h7>
+            <span>0.000</span> 
+        </div>
+        
+        <div class="box nextstep" >
+            <h7>Next step:</h7><br>
+            <span>1</span> 
+        </div>
+        
+        <div class="levels">
+            <input onclick="renderBoard()" name="level" type="radio" id="easy"value="1" checked>
+            <label for="easy">Easy</label>
+            <input onclick="renderBoard()" name="level" type="radio" id="hard"value="2">
+            <label for="hard">Hard</label>
+            <input onclick="renderBoard()" name="level" type="radio" id="Extreme!"value="3">
+            <label for="Extreme!">Extreme</label>
+        </div>
+        <table border="5">
+            <tbody class="board">
+            </tbody>
+        </table>
+    </div>
+        <script src="js/util.js"> </script>
+        <script src="js/main.js"> </script>
+    </body>
+    
+    </html>
